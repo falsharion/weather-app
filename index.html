@@ -23,19 +23,19 @@
       <div>
         <h1 class="text-center my-5 text-white fw-bold" style="font-size: 45px;">Weather App</h1>
         <form class="search">
-          <input type="text" name="city" placeholder="what city" class="form-control ">
+          <input type="text" name="city" placeholder="what city" class="form-control rounded-pill bg-white bg-opacity-25 text-white">
         </form>
       </div>
       <div class="card-top text-center">
         <div class="city-name my-3">
-          <p class="fs-2 text-white py-4">Lagos</p>
+          <p class="fs-2 text-white py-4">--</p>
         </div>
-        <img src="./img/cloudy-night.png" alt="night" style="width:30vh;">
+        <img src="./img/cloudy-night.png" alt="night" style="width:30vh;" class="clouds">
       </div>
       <div class="card-bottom mb-4">
         <div class="text-center ">
-          <p class="text-white" style="font-size: 90px;">30&deg;c</p>
-          <p class="text-white fs-2 mt-2">cloudy Night</p>
+          <p class="text-white" style="font-size: 90px;" id="degr">--</p>
+          <p class="text-white fs-2 mt-2" id="des">--</p>
         </div>
       </div>
     </div>
@@ -45,6 +45,8 @@
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Custom scripts -->
   <script type="text/javascript"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/request.js"></script>
 </body>
 
 </html>
