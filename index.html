@@ -18,12 +18,12 @@
 </head>
 
 <body>
-  <div class="bg-image" style="background-image: url(img/newbg.jpeg); height: 100vh;">
+  <div class="bg-image" style="background-image: url(img/newbg.jpeg);">
     <div class="container d-flex flex-column align-items-center justify-content-center h-100">
-      <div>
-        <h1 class="text-center my-5 text-white fw-bold" style="font-size: 45px;">Weather App</h1>
+      <div style="margin-top:39px;">
+        <h1 class="text-center my-5 text-white fw-bold" style="font-size: 35px;">Weather App</h1>
         <form class="search">
-          <input type="text" name="city" placeholder="what city" class="form-control rounded-pill bg-white bg-opacity-25 text-white">
+          <input type="text" name="city" placeholder="what location? " class="form-control rounded-pill bg-white bg-opacity-25 text-white">
         </form>
       </div>
       <div class="card-top text-center">
@@ -32,10 +32,17 @@
         </div>
         <img src="./img/cloudy-night.png" alt="night" style="width:30vh;" class="clouds">
       </div>
-      <div class="card-bottom mb-4">
+      <div class="card-middle mb-4">
         <div class="text-center ">
-          <p class="text-white" style="font-size: 90px;" id="degr">--</p>
+          <p class="text-white" style="font-size: 70px;" id="degr">--</p>
           <p class="text-white fs-2 mt-2" id="des">--</p>
+        </div>
+      </div>
+      <div class="card-bottom mb-5">
+        <div class="text-center ">
+          <p class="bg-light p-2 rounded-pill text-white bg-opacity-25 px-4 fs-4">Humidity <span style="padding-left:30vw;" class="humid">--</span></p>
+          <p class="bg-light p-2 rounded-pill text-white bg-opacity-25 px-4 fs-4">Feels like <span style="padding-left:30vw;" class="feels">--</span></p>
+          <p class="bg-light p-2 rounded-pill text-white bg-opacity-25 px-4 fs-4">Pressure <span style="padding-left:30vw;" class="pressure">--</span></p>
         </div>
       </div>
     </div>
